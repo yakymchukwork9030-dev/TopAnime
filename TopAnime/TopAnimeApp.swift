@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TopAnimeApp: App {
+
+    @State private var viewModel = AnimeViewModel(service: AnimeService())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
     }
 }
