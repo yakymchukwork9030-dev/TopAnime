@@ -50,11 +50,11 @@ struct AnimeImages: Codable {
         let imageUrl: String?
         let largeImageUrl: String?
 
+        enum CodingKeys: String, CodingKey {
+            case imageUrl      = "image_url"
+            case largeImageUrl = "large_image_url"
+        }
     }
-}
-enum CodingKeys: String, CodingKey {
-    case imageUrl      = "image_url"
-    case largeImageUrl = "large_image_url"
 }
 
 struct AiredInfo: Codable {

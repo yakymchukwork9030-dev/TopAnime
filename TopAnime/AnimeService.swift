@@ -20,7 +20,7 @@ enum NetworkError: Error {
 
 class AnimeService: AnimeServiceProtocol {
 
-    private let animeURL = "https://api.jikan.moe/v4/top/anime?type=tv"
+    private let animeURL = "https://api.jikan.moe/v4/top/anime"
     private let urlSession: URLSession
     private lazy var decoder: JSONDecoder = {
         JSONDecoder()
